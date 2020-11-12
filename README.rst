@@ -1,6 +1,6 @@
-============================
-Battery notifications for i3
-============================
+================================
+Low Battery notifications for i3
+================================
 
 This python package checks the current battery status and sends a notification if the battery. Notifications are sent for the following events:
 
@@ -26,7 +26,7 @@ Next, clone the repository and install the python package
     cd low-battery-notification
     pip3 install .
 
-.Replace ``code_byter`` in the battery_checker.service file with user username and copy it to ``/etc/systemd/system/``.
+Replace ``codebyter`` in the ``battery_checker.service`` file with user username and copy it to ``/etc/systemd/system/``.
 
 .. code::
 

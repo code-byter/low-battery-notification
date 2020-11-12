@@ -8,8 +8,8 @@ Type=simple
 Environment=DISPLAY=:0.0
 Environment=PYTHONUNBUFFERED=1
 ExecStart=/usr/bin/python3.8 -m battery_checker
-User=daniel
-Group=daniel
+User=codebyter
+Group=codebyter
 Restart=on-failure
 Type=notify
 
