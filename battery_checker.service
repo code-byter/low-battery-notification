@@ -1,0 +1,18 @@
+[Unit]
+Description=Low battery notification for i3
+Wants=graphical.target
+After=graphical.target
+
+[Service]
+Type=simple
+Environment=DISPLAY=:0.0
+Environment=PYTHONUNBUFFERED=1
+ExecStart=/usr/bin/python3.8 -m battery_checker
+User=daniel
+Group=daniel
+Restart=on-failure
+Type=notify
+
+
+[Install]
+WantedBy=default.target
